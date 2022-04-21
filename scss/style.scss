@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* =================
+   ====variables==== 
+   =================*/
+$colorSalmonFuerte: rgb(254, 200, 154);
+$colorSalmonClaro: rgb(254, 200, 154);
+
+/* ==================
+   ======header======
+   ================== */
+header {
+  width: 100%;
+  background-color: $colorSalmonFuerte;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* ==================
+   ======index======
+   ================== */
+
+.main__imgBanner {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+/* ===============================
+   ======productos novedades======
+   =============================== */
+.novedades {
+}
+.contenedorNovedades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .containerProducto {
+    width: 100%;
+    max-width: 300px;
+    border: solid 1px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    figure {
+      img {
+        width: 70%;
+        margin: 5px;
+      }
+    }
+    .cardDescription {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    .botonCompra {
+      background-color: $colorSalmonClaro;
+      display: block;
+      border-radius: 5px;
+      padding: 5px;
+      /*     transform: translateY(200%); */
+      margin-bottom: 10px;
+      a {
+        text-decoration: none;
+      }
+    }
+    .botones {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      /*     transform: translateX(300%); */
+      color: black;
+      text-align: center;
+
+      i {
+        cursor: pointer;
+        margin-bottom: 5px;
+        padding: 5px;
+        border-radius: 3px;
+        background-color: rgb(202, 202, 202);
+      }
+    }
+  }
+}
+
+/* ==================
+   ======media======
+   ================== */
+@media screen and (min-width: 992px) {
+  .containerProducto {
+    .botonCompra {
+      transform: translateY(200%);
+    }
+    .botones {
+      transform: translateX(300%);
+    }
+  }
+  .containerProducto:hover .botones {
+    transform: translateX(0);
+    transition: 1s;
+  }
+  .containerProducto:hover .botonCompra {
+    transform: translateY(0);
+    transition: 1s;
+  }
+}
