@@ -1,0 +1,73 @@
+.bodyContacto {
+  height: 75vh;
+  justify-content: center;
+  .contenedorContacto {
+    display: flex;
+    justify-content: space-between;
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    .contenedorContacto__contenido {
+      width: 45%;
+      overflow: hidden;
+      h2 {
+        font-weight: bold;
+      }
+      p {
+        span {
+          font-size: 20px;
+        }
+        i {
+          font-size: 20px;
+          margin-right: 10px;
+        }
+      }
+      .contenedorContacto__contenido--links {
+        a {
+          i {
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            margin-right: 10px;
+            border-radius: 5px;
+          }
+          .faceContacto {
+            background-color: $face;
+          }
+          .instaContacto {
+            background-color: $insta;
+          }
+          .whatsContacto {
+            background-color: $whats;
+          }
+          .tiktokContacto {
+            background-image: linear-gradient($tiktok);
+          }
+        }
+      }
+    }
+    .contenedorContacto__formulario {
+      width: 45%;
+      form {
+        display: flex;
+        flex-direction: column;
+        input {
+          margin-bottom: 5px;
+          max-width: 300px;
+          height: 40px;
+        }
+        .botonContacto {
+          max-width: 70px;
+        }
+        textarea {
+          margin-bottom: 5px;
+          max-width: 300px;
+          height: 100px;
+        }
+      }
+    }
+  }
+}

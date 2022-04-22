@@ -5,11 +5,8 @@
 }
 
 /* =================
-   ====variables==== 
-   =================*/
-/* ==================
-   ======header======
-   ================== */
+     ====variables==== 
+     =================*/
 header {
   width: 100%;
   background-color: rgb(254, 200, 154);
@@ -18,9 +15,66 @@ header {
   z-index: 1;
 }
 
-/* ==================
-   ======index======
-   ================== */
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: rgb(254, 200, 154);
+  margin-top: 40px;
+  justify-items: center;
+}
+footer h3 {
+  margin-bottom: 20px;
+}
+footer .footer__iconos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer__iconos ul li {
+  display: inline-block;
+  margin: 0 5px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+footer .footer__iconos ul li a {
+  display: block;
+  padding: 0 10px;
+  background-color: rgba(0, 0, 0, 0.342);
+  color: white;
+  font-size: 18px;
+  line-height: 50px;
+  transition: 0.2s;
+}
+
+.footer__iconos ul:hover a {
+  filter: blur(2px);
+}
+
+.footer__iconos ul li a:hover {
+  transform: translateY(-3px) scale(1.5);
+  filter: none;
+}
+
+.face:hover {
+  background-color: #3b5999;
+}
+
+.insta:hover {
+  background-color: #e4405f;
+}
+
+.whats:hover {
+  background-color: #47c856;
+}
+
+.tiktok:hover {
+  background-image: linear-gradient(#25f4ee, #fe2c55);
+}
+
 .main__imgBanner {
   width: 100%;
 }
@@ -29,25 +83,27 @@ header {
 }
 
 /* ===============================
-   ======productos novedades======
-   =============================== */
+     ======productos novedades======
+     =============================== */
 .contenedorNovedades {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  width: 100%;
+  /*   justify-content: space-around; */
 }
 .contenedorNovedades .containerProducto {
+  flex: 1 0 auto;
+  margin: 10px;
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   border: solid 1px black;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
-  margin-bottom: 20px;
 }
 .contenedorNovedades .containerProducto figure img {
   width: 70%;
@@ -58,7 +114,7 @@ header {
   margin-bottom: 5px;
 }
 .contenedorNovedades .containerProducto .botonCompra {
-  background-color: rgb(254, 200, 154);
+  background-color: rgb(245, 222, 202);
   display: block;
   border-radius: 5px;
   padding: 5px;
@@ -67,6 +123,7 @@ header {
 }
 .contenedorNovedades .containerProducto .botonCompra a {
   text-decoration: none;
+  color: black;
 }
 .contenedorNovedades .containerProducto .botones {
   display: flex;
@@ -86,10 +143,180 @@ header {
   background-color: rgb(202, 202, 202);
 }
 
+/* =====================
+     ======opiniones======
+     ===================== */
+.cuadrosOpiniones {
+  padding: 10px;
+  /*   display: flex; */
+  justify-content: center;
+}
+.cuadrosOpiniones .tarjetaOpiniones {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px rgb(148, 148, 148);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin: 10px;
+  align-items: center;
+  max-width: 300px;
+}
+.cuadrosOpiniones .tarjetaOpiniones .tarjetaOpiniones__img {
+  width: 40%;
+  margin: 10px;
+}
+.cuadrosOpiniones .tarjetaOpiniones .tarjetaOpiniones__img img {
+  width: 100%;
+}
+.cuadrosOpiniones .tarjetaOpiniones .tarjetaOpiniones__contenido {
+  width: 100%;
+}
+.cuadrosOpiniones .tarjetaOpiniones .tarjetaOpiniones__contenido i {
+  margin-bottom: 15px;
+}
+
+.contenedorPf {
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.acordion {
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+}
+.acordion .acordion__item {
+  background-color: rgb(254, 200, 154);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.473);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.acordion .acordion__item .acordion__link {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.acordion .acordion__item .acordion__link i {
+  color: black;
+  padding: 5px;
+}
+.acordion .acordion__item .acordion__link .menos {
+  display: none;
+}
+.acordion .respuesta {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(245, 222, 202);
+  transition: max-height 0.9s;
+  border-radius: 10px;
+}
+.acordion .respuesta p {
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+}
+
+.acordion__item:target .respuesta {
+  max-height: 500px;
+}
+.acordion__item:target .acordion__link .mas {
+  display: none;
+}
+.acordion__item:target .acordion__link .menos {
+  display: block;
+}
+
+.bodyContacto {
+  height: 75vh;
+  justify-content: center;
+}
+.bodyContacto .contenedorContacto {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+.bodyContacto .contenedorContacto .contenedorContacto__contenido {
+  width: 45%;
+  overflow: hidden;
+}
+.bodyContacto .contenedorContacto .contenedorContacto__contenido h2 {
+  font-weight: bold;
+}
+.bodyContacto .contenedorContacto .contenedorContacto__contenido p span {
+  font-size: 20px;
+}
+.bodyContacto .contenedorContacto .contenedorContacto__contenido p i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.bodyContacto .contenedorContacto .contenedorContacto__contenido .contenedorContacto__contenido--links a i {
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.bodyContacto .contenedorContacto .contenedorContacto__contenido .contenedorContacto__contenido--links a .faceContacto {
+  background-color: #3b5999;
+}
+.bodyContacto .contenedorContacto .contenedorContacto__contenido .contenedorContacto__contenido--links a .instaContacto {
+  background-color: #e4405f;
+}
+.bodyContacto .contenedorContacto .contenedorContacto__contenido .contenedorContacto__contenido--links a .whatsContacto {
+  background-color: #47c856;
+}
+.bodyContacto .contenedorContacto .contenedorContacto__contenido .contenedorContacto__contenido--links a .tiktokContacto {
+  background-image: linear-gradient(#25f4ee, #fe2c55);
+}
+.bodyContacto .contenedorContacto .contenedorContacto__formulario {
+  width: 45%;
+}
+.bodyContacto .contenedorContacto .contenedorContacto__formulario form {
+  display: flex;
+  flex-direction: column;
+}
+.bodyContacto .contenedorContacto .contenedorContacto__formulario form input {
+  margin-bottom: 5px;
+  max-width: 300px;
+  height: 40px;
+}
+.bodyContacto .contenedorContacto .contenedorContacto__formulario form .botonContacto {
+  max-width: 70px;
+}
+.bodyContacto .contenedorContacto .contenedorContacto__formulario form textarea {
+  margin-bottom: 5px;
+  max-width: 300px;
+  height: 100px;
+}
+
 /* ==================
    ======media======
    ================== */
+@media screen and (min-width: 500px) {
+  .contenedorPf {
+    height: 110vh;
+  }
+}
 @media screen and (min-width: 992px) {
+  .contenedorNovedades {
+    display: flex;
+  }
+
   .containerProducto .botonCompra {
     transform: translateY(200%);
   }
