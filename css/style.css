@@ -12,7 +12,7 @@ header {
   background-color: rgb(254, 200, 154);
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 footer {
@@ -196,7 +196,7 @@ footer .footer__iconos ul li a {
   padding: 10px;
 }
 .acordion .acordion__item .acordion__link {
-  font-size: 25px;
+  font-size: 15px;
   font-weight: bold;
   text-decoration: none;
   color: black;
@@ -222,7 +222,7 @@ footer .footer__iconos ul li a {
   border-radius: 10px;
 }
 .acordion .respuesta p {
-  font-size: 20px;
+  font-size: 15px;
   color: black;
   padding: 10px;
 }
@@ -270,6 +270,7 @@ footer .footer__iconos ul li a {
   color: white;
   margin-right: 10px;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 .bodyContacto .contenedorContacto .contenedorContacto__contenido .contenedorContacto__contenido--links a .faceContacto {
   background-color: #3b5999;
@@ -302,6 +303,33 @@ footer .footer__iconos ul li a {
   margin-bottom: 5px;
   max-width: 300px;
   height: 100px;
+}
+
+.cata__list {
+  list-style: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 20px;
+}
+.cata__list .cata__link {
+  display: inline;
+  margin: 5px;
+}
+.cata__list .cata__link .cata__link--deco {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.carruselCata {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+}
+.carruselCata .size-carrusel {
+  width: 100%;
+  display: inline-block;
+  padding-left: 30px;
 }
 
 /* ==================

@@ -1,0 +1,25 @@
+.cata__list {
+  list-style: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 20px;
+  .cata__link {
+    display: inline;
+    margin: 5px;
+    .cata__link--deco {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+.carruselCata {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  .size-carrusel {
+    width: 100%;
+    display: inline-block;
+    padding-left: 30px;
+  }
+}
