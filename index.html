@@ -10,8 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/ef37bab94c.js" crossorigin="anonymous"></script>
-    <!-- animaciones -->
-    <!-- link -->
+    <!-- animacion -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Tribu Urbana.</title>
   </head>
 
@@ -61,7 +62,8 @@
 
     <!-- ------------------cuerpo de pagina----------------------------- -->
     <main class="container-fluid">
-      <div class="main__imgBanner mb-5">
+      <div class="main__imgBanner mb-5" data-aos="fade-up">
+        >
         <a href="./index.html"><img src="./images/banner2.jpg" alt="" /></a>
       </div>
       <section class="text-center">
@@ -70,7 +72,7 @@
 
         <article class="container-fluid contenedorNovedades">
           <!-- remera -->
-          <div class="containerProducto">
+          <div class="containerProducto" data-aos="zoom-in">
             <figure>
               <img src="./images/novedades/remerasw.png" alt="" />
             </figure>
@@ -88,7 +90,7 @@
             </div>
           </div>
           <!-- buzo -->
-          <div class="containerProducto">
+          <div class="containerProducto" data-aos="zoom-in">
             <figure>
               <img src="./images/novedades/buzosw.png" alt="" />
             </figure>
@@ -106,7 +108,7 @@
             </div>
           </div>
           <!-- gorra -->
-          <div class="containerProducto">
+          <div class="containerProducto" data-aos="zoom-in">
             <figure>
               <img src="./images/novedades/gorrasw.png" alt="" />
             </figure>
@@ -124,7 +126,7 @@
             </div>
           </div>
           <!-- taza -->
-          <div class="containerProducto">
+          <div class="containerProducto" data-aos="zoom-in">
             <figure>
               <img src="./images/novedades/tazasw.png" alt="" />
             </figure>
@@ -142,7 +144,7 @@
             </div>
           </div>
           <!-- mochila -->
-          <div class="containerProducto">
+          <div class="containerProducto" data-aos="zoom-in">
             <figure>
               <img src="./images/novedades/mochilasw.png" alt="" />
             </figure>
@@ -168,7 +170,7 @@
       <h2 class="mb-5">QUE OPINAN NUESTROS CLIENTES</h2>
       <div class="cuadrosOpiniones row">
         <!-- opinion 1 -->
-        <div class="tarjetaOpiniones col-md-6 col-lg-3">
+        <div class="tarjetaOpiniones col-md-6 col-lg-3" data-aos="fade-left">
           <div class="tarjetaOpiniones__img">
             <img src="./images/comentarios/perosna1.jpg" alt="" />
           </div>
@@ -183,7 +185,7 @@
           </div>
         </div>
         <!-- opinion 2 -->
-        <div class="tarjetaOpiniones col-md-6 col-lg-3">
+        <div class="tarjetaOpiniones col-md-6 col-lg-3" data-aos="fade-right">
           <div class="tarjetaOpiniones__img">
             <img src="./images/comentarios/perosna2.jpg" alt="" />
           </div>
@@ -198,7 +200,7 @@
           </div>
         </div>
         <!-- opinion 3 -->
-        <div class="tarjetaOpiniones col-md-6 col-lg-3">
+        <div class="tarjetaOpiniones col-md-6 col-lg-3" data-aos="fade-left">
           <div class="tarjetaOpiniones__img">
             <img src="./images/comentarios/perosna3.jpg" alt="" />
           </div>
@@ -213,7 +215,7 @@
           </div>
         </div>
         <!-- opinion 4 -->
-        <div class="tarjetaOpiniones col-md-6 col-lg-3">
+        <div class="tarjetaOpiniones col-md-6 col-lg-3" data-aos="fade-right">
           <div class="tarjetaOpiniones__img">
             <img src="./images/comentarios/perosna4.jpg" alt="" />
           </div>
@@ -249,7 +251,10 @@
         </ul>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
